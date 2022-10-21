@@ -508,3 +508,22 @@ function countingValleys(steps, path) {
 
 countingValleys(8,'DDUUDDUDUUUD')
 
+// problem #22
+function getMoneySpent(keyboards, drives, b) {
+  /*
+   * Write your code here.
+   */
+  let result = 0
+  for(let i = 0; i < keyboards.length; i++){
+    for(let j = 0; j < drives.length; j++){
+      const price = keyboards[i] + drives[j]
+      if(price <= b && price > result){
+        result = price
+      }
+    }
+  }
+  console.log(result ? result : -1)
+  return result || -1
+}
+
+getMoneySpent([ 3, 1 ] , [ 5, 2, 8 ] , 10)
