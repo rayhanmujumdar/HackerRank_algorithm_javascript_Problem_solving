@@ -531,8 +531,36 @@ getMoneySpent([ 3, 1 ] , [ 5, 2, 8 ] , 10)
 // Problem #23
 // Complete the catAndMouse function below.
 function catAndMouse(x, y, z) {
-  console.log(x,y,z)
+  // my try but not success
+  if(x > y && x < z){
+    return "Cat A"
+  }else if( x > z){
+    if((z - y) < (x - z)){
+      return "Cat B"
+    }else{
+      return "Mouse C"
+    }
+  }else if(y > x && y < z){
+    return "Cat B"
+  }else if ( y > z ){
+    if((z - x) < (y - z)){
+      return "Cat A"
+    }else{
+      return "Mouse C"
+    }
+  }else{
+    return "Mouse C"
+  }
 }
-
-catAndMouse(1,2,3)
-catAndMouse(1,3,2)
+/* 
+solution: -> 
+if(Math.abs(x - z) < Math.abs(y-z)){
+    return "Cat A"
+  }else if(Math.abs(x-z) > Math.abs(y - z)){
+    return "Cat B"
+  }else{
+    return "Mouse C"
+  }
+*/
+console.log(catAndMouse(1,3,2)) // result Cat A
+// catAndMouse(1,3,2)
