@@ -554,13 +554,13 @@ function catAndMouse(x, y, z) {
 }
 /* 
 solution: -> 
-if(Math.abs(x - z) < Math.abs(y-z)){
-    return "Cat A"
-  }else if(Math.abs(x-z) > Math.abs(y - z)){
-    return "Cat B"
-  }else{
-    return "Mouse C"
-  }
+// if(Math.abs(x - z) < Math.abs(y-z)){
+//     return "Cat A"
+//   }else if(Math.abs(x-z) > Math.abs(y - z)){
+//     return "Cat B"
+//   }else{
+//     return "Mouse C"
+//   }
 */
 console.log(catAndMouse(1,3,2)) // result Cat A
 // catAndMouse(1,3,2)
