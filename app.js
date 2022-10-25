@@ -522,8 +522,17 @@ function getMoneySpent(keyboards, drives, b) {
       }
     }
   }
-  console.log(result ? result : -1)
+  // console.log(result ? result : -1)
   return result || -1
 }
 
 getMoneySpent([ 3, 1 ] , [ 5, 2, 8 ] , 10)
+
+// Problem #23
+// Complete the catAndMouse function below.
+function catAndMouse(x, y, z) {
+  console.log(x,y,z)
+}
+
+catAndMouse(1,2,3)
+catAndMouse(1,3,2)
